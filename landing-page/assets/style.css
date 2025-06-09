@@ -562,8 +562,13 @@ header .container button.button:hover {
 
 #blogs .container.top {
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+#blog .container.top .text {
+  flex: 1 1 0%;
 }
 
 #blogs .container.top .text h6 {
@@ -597,7 +602,6 @@ header .container button.button:hover {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  margin-left: 200px;
 }
 
 #blogs .container.top button:hover {
@@ -609,13 +613,13 @@ header .container button.button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 31px 40px 82px;
+  padding-bottom: 100px;
 }
 
 #blogs .container.bottom .grid {
   position: relative;
+  height: 550px;
 }
-
 
 #blogs .container.bottom .grid .top {
   box-shadow: 0 0 30px #afacac80;
@@ -640,6 +644,7 @@ header .container button.button:hover {
   top: 200px;
   left: 0;
   right: 0;
+  height: 300px;
 }
 
 #blogs .container.bottom .grid .bottom ul li {
@@ -717,15 +722,14 @@ header .container button.button:hover {
 }
 
 #contact .container .bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
+  display: grid;
+  gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
+  grid-template-columns: 300px 1fr 1fr 500px;
 }
 
-#contact .container .bottom img {
+#contact .container .bottom img.logo {
   width: 200px;
   margin-bottom: 1rem;
 }
@@ -769,6 +773,10 @@ header .container button.button:hover {
   margin-bottom: 1rem;
 }
 
+#contact .container .bottom .input-wrapper {
+  position: relative;
+}
+
 #contact .container .bottom input {
   border-radius: 4px;
   width: 100%;
@@ -777,6 +785,26 @@ header .container button.button:hover {
   font-size: 14px;
   padding: 0 20px;
   height: 60px;
+  color: #fff;
+}
+
+#contact .container .bottom button.submit {
+  width: 35px;
+  height: 35px;
+  background-color: #c93357;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contact .container .bottom button.submit img {
+  height: 65%;
+  width: 65%;
 }
 
 #contact .container p a {
@@ -790,12 +818,13 @@ header .container button.button:hover {
   border: none;
   height: 0.5px;
   background-color: #292929;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 #contact .container .social-media-links {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 

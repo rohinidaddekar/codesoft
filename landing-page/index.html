@@ -400,7 +400,7 @@
         <hr />
         <div class="bottom">
           <ul class="row">
-            <img src="./assets/images/logo-white.svg" alt="logo" />
+            <img src="./assets/images/logo-white.svg" alt="logo" class="logo" />
             <li>
               <img src="./assets/images/location.png" alt="Address" />5th
               Street, 21st Floor, New York, USA
@@ -443,17 +443,19 @@
               Build responsive, mobile-first projects on the web with the
               world’s most popular front-end component library.
             </p>
-
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="email"
-              id="mc-email"
-              placeholder="Email Address"
-              required=""
-            />
-            <button type="submit" value="sign up"></button>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="EMAIL"
+                class="email"
+                id="mc-email"
+                placeholder="Email Address"
+                required=""
+              />
+              <button type="submit" class="submit">
+                <img src="./assets/images/send.png" alt="send" />
+              </button>
+            </div>
           </div>
         </div>
         <hr />

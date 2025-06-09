@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-</head>
-<body>
-    <h1> Portfolio</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rohini Daddekar</h1>
+      <p>Web Developer | Designer | Coder</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img
+        src="./assets/images/WhatsApp Image 2025-06-09 at 3.08.07 PM.jpeg"
+        alt="Your photo"
+      />
+      <p>
+        Hi! I'm a passionate web developer with experience in building websites
+        using HTML, CSS, and JavaScript.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>
+          This is a simple and functional calculator application created using
+          HTML, CSS, and JavaScript. The calculator performs basic arithmetic
+          operations such as addition, subtraction, multiplication, and
+          division. The user interface is clean and responsive, styled with CSS
+          for a professional look. JavaScript handles the logic for capturing
+          user input, performing calculations, and displaying results
+          dynamically. This project demonstrates fundamental web development
+          concepts including DOM manipulation, event handling, and layout
+          styling.
+        </p>
+        <ul>
+          <li><h3>HTML Terminologies:</h3></li>
+          <li>
+            button – Creates clickable buttons for numbers and operations.
+          </li>
+          <li>input or div – Used to display the current input or result.</li>
+          <li>section / div – Containers to group and organize layout.</li>
+
+          <li><h3>🔸 CSS Terminologies:</h3></li>
+          <li>
+            Flexbox/Grid – Used for aligning and arranging calculator buttons
+            neatly.
+          </li>
+          <li>Classes & IDs – For targeting elements and applying styles.</li>
+          <li>
+            Media Queries – Optional: to make the calculator responsive on
+            different devices.
+          </li>
+
+          <li><h3>🔸 JavaScript Terminologies: </h3></li>
+          <li>Variables (let, const) – To store
+          numbers, operators, and results. </li>
+          <li>Event Listeners (addEventListener) –
+          To detect button clicks.</li>
+          <li> Functions – To perform operations like add(),
+          subtract(), etc. </li>
+          <li>DOM Manipulation – Accessing and updating HTML
+          elements using document.querySelector, .innerText, .value, etc.</li>
+          <li>Operators – Arithmetic symbols like +, -, *, /.</li>
+          <li> Conditionals (if,
+          else) – For handling different types of user inputs or edge cases
+          (like divide by zero). </li>
+          <li>eval() (optional) – Sometimes used to evaluate
+          string-based math expressions.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Another project description with its features and purpose.</p>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: rohinidaddekar@gmail.com</p>
+      <p>Phone: +91-8010598066</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Rohini Daddekar. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
