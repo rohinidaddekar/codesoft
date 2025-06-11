@@ -1,83 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-header {
+.heading {
+  font-size: 30px;
+  font-weight: 900;
+  color: #7f55b1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  background-color: #7f55b1;
+  color: white !important;
+  font-weight: bold;
+  padding: 17px 25px;
+  font-size: 16px !important;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #c93357;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .logo {
+  color: #000000;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.header ul li a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.header ul li a:hover {
+  color: #a5158c;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#home {
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home .container.home-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#home .container h5 {
+  color: #ff8282;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+#home .container h1 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 100px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #fffdf6;
+}
+
+#home .container h1 span {
+  color: #b33791;
+}
+
+#home .container p {
+  color: #cac9c5;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+  max-width: 50%;
+}
+
+#about .left,
+#about .right {
+  width: 50%;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about .left img {
+  width: 100%;
+}
+
+#about .right h2 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 80px;
+  color: #7f55b1;
+  text-transform: uppercase;
+}
+
+#about .right h4 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #233050;
+  margin-bottom: 15px;
+}
+
+#about .right h4 span {
+  color: #a5158c;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+#about .right ul {
+  list-style: none;
+}
+
+#about .right ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+#skills {
+  background-image: url("./images/skills-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+
+#skills h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#skills ul li {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #233050;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.seperator{
+  margin: 50px 0px;
+}
+
+#projects h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #7f55b1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#projects .project .image-wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#projects .project img{
+  border: 4px solid black;
+  width: 100%;
+  object-fit: cover;
+}
+
+#projects .project .heading {
+  font-size: 25px;
+  font-weight: 800;
+  color: #233050;
+  margin-bottom: 20px;
+}
+
+#projects .project p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #4f4f4f;
+  margin-top: 20px;
+}
+
+#projects .project .terminologies {
+  display: flex;
+  gap: 40px;
+}
+
+#projects .project .terminologies h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #233050;
   color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#about img {
-  border-radius: 50%;
-  margin: 20px 0;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 2px solid #333;
-}
-
-ul {
+  padding: 15px;
   list-style: none;
-  padding: 0;
 }
 
-ul li {
-  display: inline-block;
-  margin: 10px;
-  padding: 8px 15px;
-  background: #ddd;
-  border-radius: 5px;
+#projects .project .terminologies ul {
+  padding-left: 20px;
 }
 
-.project {
-  margin: 20px auto;
-  max-width: 600px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: #fff;
+#projects .project .terminologies ul li {
+  margin-bottom: 20px;
 }
 
-.project img {
+#projects .project .terminologies ul li span {
+  font-weight: 700;
+}
+
+#resume {
+  background-image: url("./images/resume-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#resume h2 {
+  color: #ffffff;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#contact .left,
+#contact .right {
+  width: 50%;
+}
+
+#contact .left h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#contact .left form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact .left form input {
   width: 100%;
+  padding: 15px;
   border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  outline: none;
+  box-shadow: none;
 }
 
-#resume a {
-  display: inline-block;
-  padding: 17px 25px;
-  font-size: 20px;
-  background: #0147f4;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
+#contact .left form textarea {
+  width: 100%;
+  padding: 15px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  outline: none;
+  box-shadow: none;
+  resize: none;
 }
 
-#resume a:hover {
-  background-color: #c93357;
-  transition: all 0.5s ease-in-out;
+#contact .right img {
+  width: 100%;
 }
 
 footer {
-  background-color: #233050;
-  color: white;
-  padding: 10px;
+  border-top: 1px solid #d2d2d2;
+  padding: 20px 0;
   text-align: center;
 }

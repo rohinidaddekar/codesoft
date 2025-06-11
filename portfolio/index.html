@@ -7,38 +7,95 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <h1>Rohini Daddekar</h1>
-      <p>Web Developer | Designer | Coder</p>
+      <div class="container header">
+        <a href="#home" class="logo">RD</a>
+        <ul class="navbar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
+    <!-- header end -->
 
-    <section id="about">
-      <h2>About Me</h2>
-      <img
-        src="./assets/images/WhatsApp Image 2025-06-09 at 3.08.07 PM.jpeg"
-        alt="Your photo"
-      />
-      <p>
-        Hi! I'm a passionate web developer with experience in building websites
-        using HTML, CSS, and JavaScript.
-      </p>
+    <!-- home section -->
+    <section id="home">
+      <div class="container home-section">
+        <h1><span>Rohini</span> <br />Daddekar</h1>
+        <p>
+          I'm a web developer passionate about building clean and responsive
+          websites using HTML, CSS, and JavaScript. I enjoy learning new
+          technologies and turning ideas into functional, user-friendly designs.
+        </p>
+        <h5>Web Developer | Designer</h5>
+        <a href="./assets/images/Resume_Rohini.pdf" class="btn" download>
+          Download Resume
+        </a>
+      </div>
     </section>
+    <!-- home section end -->
 
+    <!-- about section -->
+    <section id="about" class="container">
+      <div class="left">
+        <img src="./assets/images/about.jpg" alt="Your photo" />
+      </div>
+      <div class="right">
+        <h2>About Me</h2>
+        <h4>I will <span>Design & Develope</span> a best website</h4>
+        <ul>
+          <li>
+            Hi, I’m a passionate web developer with a strong interest in
+            creating user-friendly and responsive websites. I enjoy turning
+            ideas into real digital experiences using HTML, CSS, and JavaScript.
+          </li>
+          <li>
+            Whether it’s designing responsive layouts, solving code challenges,
+            or exploring modern frameworks, I enjoy every step of the
+            development process. I'm currently focused on building personal
+            projects, collaborating with others, and growing as a developer in
+            the tech world.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- skill section  -->
     <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Responsive Design</li>
-      </ul>
+      <div class="container">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
     </section>
+    <!-- skill section end -->
 
-    <section id="projects">
+    <section id="projects" class="container section-padding">
       <h2>Projects</h2>
       <div class="project">
-        <img src="project1.jpg" alt="Project 1" />
-        <h3>Project One</h3>
+        <h3 class="heading">Calculator</h3>
+        <div class="image-wrapper">
+          <img src="../assets/images/calculator.png" alt="Calculator" />
+        </div>
         <p>
           This is a simple and functional calculator application created using
           HTML, CSS, and JavaScript. The calculator performs basic arithmetic
@@ -50,62 +107,169 @@
           concepts including DOM manipulation, event handling, and layout
           styling.
         </p>
-        <ul>
-          <li><h3>HTML Terminologies:</h3></li>
-          <li>
-            button – Creates clickable buttons for numbers and operations.
-          </li>
-          <li>input or div – Used to display the current input or result.</li>
-          <li>section / div – Containers to group and organize layout.</li>
-
-          <li><h3>🔸 CSS Terminologies:</h3></li>
-          <li>
-            Flexbox/Grid – Used for aligning and arranging calculator buttons
-            neatly.
-          </li>
-          <li>Classes & IDs – For targeting elements and applying styles.</li>
-          <li>
-            Media Queries – Optional: to make the calculator responsive on
-            different devices.
-          </li>
-
-          <li><h3>🔸 JavaScript Terminologies: </h3></li>
-          <li>Variables (let, const) – To store
-          numbers, operators, and results. </li>
-          <li>Event Listeners (addEventListener) –
-          To detect button clicks.</li>
-          <li> Functions – To perform operations like add(),
-          subtract(), etc. </li>
-          <li>DOM Manipulation – Accessing and updating HTML
-          elements using document.querySelector, .innerText, .value, etc.</li>
-          <li>Operators – Arithmetic symbols like +, -, *, /.</li>
-          <li> Conditionals (if,
-          else) – For handling different types of user inputs or edge cases
-          (like divide by zero). </li>
-          <li>eval() (optional) – Sometimes used to evaluate
-          string-based math expressions.</li>
-        </ul>
+        <div class="terminologies">
+          <div>
+            <h3>🔸 HTML Terminologies:</h3>
+            <ul>
+              <li>
+                <span> button –</span> Creates clickable buttons for numbers and
+                operations.
+              </li>
+              <li>
+                <span> input or div – </span>Used to display the current input
+                or result.
+              </li>
+              <li>
+                <span>section / div – </span>Containers to group and organize
+                layout.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>🔸 CSS Terminologies:</h3>
+            <ul>
+              <li>
+                <span>Flexbox/Grid – </span>Used for aligning and arranging
+                calculator buttons neatly.
+              </li>
+              <li>
+                <span> Classes & IDs –</span> For targeting elements and
+                applying styles.
+              </li>
+              <li>
+                <span> Media Queries –</span> Optional: to make the calculator
+                responsive on different devices.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>🔸 JavaScript Terminologies:</h3>
+            <ul>
+              <li>
+                <span> Variables (let, const) –</span> To store numbers,
+                operators, and results.
+              </li>
+              <li>
+                <span>Event Listeners (addEventListener) – </span>To detect
+                button clicks.
+              </li>
+              <li>
+                <span> Functions – </span>To perform operations like add(),
+                subtract(), etc.
+              </li>
+              <li>
+                <span> DOM Manipulation –</span> Accessing and updating HTML
+                elements using document.querySelector, .innerText, .value, etc.
+              </li>
+              <li>
+                <span>Operators – </span>Arithmetic symbols like +, -, *, /.
+              </li>
+              <li>
+                <span>Conditionals (if, else) –</span> For handling different
+                types of user inputs or edge cases (like divide by zero).
+              </li>
+              <li>
+                <span> eval() (optional) –</span> Sometimes used to evaluate
+                string-based math expressions.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
+      <hr class="seperator" />
+
       <div class="project">
-        <img src="project2.jpg" alt="Project 2" />
-        <h3>Project Two</h3>
-        <p>Another project description with its features and purpose.</p>
+        <h3 class="heading">Landing Page</h3>
+        <div class="image-wrapper">
+          <img src="../assets/images/landing-page.png" alt="Landing Page" />
+        </div>
+        <p>
+          This is a fully responsive landing page designed using HTML and CSS.
+          The page includes structured sections such as Home, About Us,
+          Services, Blog, and Contact. It features clean layout, smooth
+          navigation, and a professional look—ideal for showcasing a brand or
+          business online. This project highlights my skills in structuring
+          content, designing intuitive layouts, and ensuring cross-device
+          compatibility.
+        </p>
+
+        <div class="terminologies">
+          <div>
+            <h3>🔸 HTML Concepts:</h3>
+            <ul>
+              <li>
+                <span>Semantic Tags –</span> Used elements like
+                <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and
+                <code>&lt;footer&gt;</code>
+              </li>
+              <li>
+                <span>Navigation Menu –</span> Built using
+                <code>&lt;nav&gt;</code> and <code>&lt;a&gt;</code> tags
+              </li>
+              <li>
+                <span>Anchor Links –</span> Smooth scrolling to different page
+                sections
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>🔸 CSS Concepts:</h3>
+            <ul>
+              <li>
+                <span>Flexbox & Grid –</span> Used for aligning sections and
+                content
+              </li>
+              <li>
+                <span>Typography & Colors –</span> Styled for visual hierarchy
+                and brand identity
+              </li>
+              <li>
+                <span>Responsive Design –</span> Layout adapts to mobile,
+                tablet, and desktop screens
+              </li>
+              <li>
+                <span>Hover Effects –</span> Added interactivity for buttons and
+                links
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="resume">
-      <h2>Resume</h2>
-      <a href="resume.pdf" download>Download My Resume</a>
+      <div class="container">
+        <h2 class="heading">Resume</h2>
+        <a href="./assets/images/Resume_Rohini.pdf" class="btn" download>
+          Download Resume
+        </a>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: rohinidaddekar@gmail.com</p>
-      <p>Phone: +91-8010598066</p>
+    <section id="contact" class="container section-padding">
+      <div class="left">
+        <h2 class="heading">Contact</h2>
+        <form>
+          <div>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div>
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div>
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="right">
+        <img src="./assets/images/contact.jpg" alt="Contact" />
+      </div>
     </section>
 
     <footer>
-      <p>&copy; 2025 Rohini Daddekar. All rights reserved.</p>
+      <p class="container">&copy; 2025 Rohini Daddekar. All rights reserved.</p>
     </footer>
   </body>
 </html>
