@@ -20,6 +20,15 @@
   align-items: center;
 }
 
+.sticky{
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 999999;
+}
+
 header .container img {
   width: 200px;
 }
@@ -29,6 +38,63 @@ header .container img {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+
+header .menu {
+  display: none;
+  cursor: pointer;
+}
+
+header #drawer-menus {
+  display: none;
+}
+
+header #drawer-menus.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+header #drawer-menus .drawer-menus-container {
+  margin-left: auto;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+}
+
+header #drawer-menus ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+header #drawer-menus ul li {
+  background-color: rgb(222, 206, 250);
+}
+
+header #drawer-menus ul li a{
+  display: block;
+  padding: 10px;
+}
+
+header #drawer-menus .drawer-menus-container #close {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .container li {
@@ -822,13 +888,20 @@ header .container button.button:hover {
 }
 
 #contact .container .social-media-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#contact .container .social-media-link-icon {
   list-style: none;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-#contact .container .social-media-links li a {
+#contact .container .social-media-link-icon li a {
   background-color: #ffffff1a;
   width: 40px;
   height: 40px;
@@ -838,10 +911,10 @@ header .container button.button:hover {
   justify-content: center;
 }
 
-#contact .container .social-media-links li a img {
+#contact .container .social-media-link-icon li a img {
   width: 20px;
 }
 
-#contact .container .social-media-links li a:hover {
+#contact .container .social-media-link-icon li a:hover {
   opacity: 0.8;
 }

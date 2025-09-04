@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing-page</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive-style.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header id="header">
       <div class="container header">
         <img src="./assets/images/logo.svg" alt="logo" />
         <ul class="navbar">
@@ -29,6 +30,33 @@
           </li>
         </ul>
         <button class="button">Try For Free</button>
+
+        <button class="menu" id="ham-menu">
+          <img src="./assets/images/menu.png" alt="menu" />
+        </button>
+
+        <div id="drawer-menus" class="drawer-menus">
+          <div class="drawer-menus-container">
+            <button id="close">X</button>
+            <ul>
+              <li>
+                <a class="mobile-menu-link" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="mobile-menu-link" href="#services">Services</a>
+              </li>
+              <li>
+                <a class="mobile-menu-link" href="#aboutus">AboutUs</a>
+              </li>
+              <li>
+                <a class="mobile-menu-link" href="#blogs">Blogs</a>
+              </li>
+              <li>
+                <a class="mobile-menu-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- header end -->
@@ -467,7 +495,7 @@
             </p>
           </div>
           <div>
-            <ul class="social-media-links">
+            <ul class="social-media-link-icon">
               <li>
                 <a href="#">
                   <img
@@ -497,5 +525,6 @@
       </div>
     </footer>
     <!-- footer section end -->
+    <script src="./assets/index.js"></script>
   </body>
 </html>
